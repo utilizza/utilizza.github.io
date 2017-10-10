@@ -1,1 +1,19 @@
 theme: jekyll-theme-cayman
+url: http://utilizza.co
+title: Utilizza
+subtitle: Design de Interação
+baseurl: ""
+twitter_username: utilizzaco
+github_username: utilizza
+facebook_page: utilizza
+linkedin_page: utilizza
+location: Vila Olímpia - São Paulo
+email: contato@utilizza.co
+
+team:
+  talita:
+    name: Talita Pagani
+    site: http://talitapagani.com
+    twitter: talitapagani
+    github: talitapagani
+    about: Talita Pagani é cientista da computação por formação e UX designer por paixão, atuando há 12 anos na área de TI. É bacharel e mestre em Ciência da Computação, especializada em Interação Humano-Computador (IHC) e Acessibilidade Web para pessoas com Autismo. Professora universitária de pós-graduação, escritora de artigos técnicos e palestrante em eventos de tecnologia. Integra o Grupo de Especialistas em Acessibilidade Web do W3C Brasil e é voluntária do Movimento Web Para Todos.
