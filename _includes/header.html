@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>{{ site.title + " - " + site.subtitle }}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }} - {{ site.subtitle }}</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" media="screen, projection" rel="stylesheet">
+  <link href="{{ root_url }}/assets/css/style.css" media="screen, projection" rel="stylesheet">
 </head>
 <body>
+  <a class="shortcut" href="#mainContent"><span>Ir para o conteúdo</span></a>
+
   <header role="banner">
     <div class="wrap">
-      <div class="header-logo"></div>
+      <div class="header-logo">
+        <span class="visuallyHidden">Utilizza - Design de Interação</span>
+      </div>
       <nav class="header-navigation">
         <ul>
           <li><a href="#" class="header-linkText">Nosso blog no Medium</a></li>
           <li><a href="#" class="header-linkText">Contato</a></li>
           <li>
-            <a href="#" class="header-linkImage" title="Página no Facebook"></a>
+            <a href="#" class="header-linkImage" title="Página no Facebook">
+              <span class="visuallyHidden">Facebook</span>
+            </a>
           </li>
           <li>
-            <a href="#" class="header-linkImage" title="Perfil no Twitter"></a>
+            <a href="#" class="header-linkImage" title="Perfil no Twitter">
+              <span class="visuallyHidden">Twitter</span>
+            </a>
           </li>
           <li>
-            <a href="#" class="header-linkImage" title="Página no LinkedIn"></a>
+            <a href="#" class="header-linkImage" title="Página no LinkedIn">
+              <span class="visuallyHidden">LinkedIn</span>
+            </a>
           </li>
         </ul>
       </nav>
