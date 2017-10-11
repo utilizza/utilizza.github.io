@@ -1,0 +1,9 @@
+$component: services;
+
+.#{$component} {
+  background: $light-background-color;
+}
+
+.#{$component}-title {
+  @extend .sectionTitle;
+}

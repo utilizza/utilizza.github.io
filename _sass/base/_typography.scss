@@ -8,4 +8,22 @@ $line-height: 1.6em;
 html, body {
   font: $font-regular 1rem $font-family;
   line-height: $line-height;
+  color: $text-color;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: $font-heavy;
+  line-height: $line-height;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  &:after {
+    display: block;
+    width: 3rem;
+    border-bottom: 5px solid $primary-color;
+    content: " ";
+    margin: 0 auto 0 auto;
+  }
 }

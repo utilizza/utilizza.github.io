@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }} - {{ site.subtitle }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }} - {{ site.subtitle }}</title>
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -13,10 +13,10 @@
 <body>
   <a class="shortcut" href="#mainContent"><span>Ir para o conteúdo</span></a>
 
-  <header role="banner">
-    <div class="wrap">
+  <header>
+    <div class="wrap flexWrap">
       <div class="header-logo">
-        <span class="visuallyHidden">Utilizza - Design de Interação</span>
+        <img src="{{ root_url }}/images/utilizza-logo.png" alt="Utilizza - Design de Interação">
       </div>
       <nav class="header-navigation">
         <ul>
