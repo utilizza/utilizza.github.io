@@ -1,9 +1,41 @@
 $component: services;
+$singleComponent: serviceItem;
 
 .#{$component} {
   background: $light-background-color;
+  padding: 1em;
 }
 
 .#{$component}-title {
   @extend .sectionTitle;
+}
+
+.#{$component}-box {
+  padding: 1em;
+}
+
+.#{$singleComponent} {
+  padding: 1em;
+  background: $inverse-color;
+  border: 1px solid $border-color;
+}
+
+@media (min-width: 800px) {
+
+  .#{$component}-box {
+    @include display-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .#{$singleComponent} {
+    flex-grow: 1;
+    flex-basis: 30%;
+  }
+
+  .#{$singleComponent}:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
 }

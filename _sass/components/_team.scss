@@ -1,0 +1,9 @@
+$component: team;
+
+.#{$component} {
+  padding: 2em;
+}
+
+.#{$component}-title {
+  @extend .sectionTitle;
+}
