@@ -1,9 +1,60 @@
 $component: services;
+$singleComponent: serviceItem;
 
 .#{$component} {
   background: $light-background-color;
+  padding: 1em;
+  text-align: center;
 }
 
 .#{$component}-title {
   @extend .sectionTitle;
+}
+
+.#{$component}-box {
+  padding: 1em;
+}
+
+.#{$component}-button {
+  @extend .button;
+  color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-color;
+    color: $inverse-color;
+  }
+}
+
+.#{$singleComponent} {
+  padding: 1em;
+  background: $inverse-color;
+  border: 1px solid $border-color;
+}
+
+.#{$singleComponent}-title,
+.#{$singleComponent}-description {
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+
+  .#{$component}-box {
+    @include display-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .#{$singleComponent} {
+    flex-grow: 1;
+    flex-basis: 30%;
+  }
+
+  .#{$singleComponent}:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
 }
