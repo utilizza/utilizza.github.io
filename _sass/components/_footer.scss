@@ -1,0 +1,55 @@
+$component: footer;
+
+#{$component} {
+  .flexWrap {
+    padding: 2em;
+    background: #212223;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: strech;
+    color: $inverse-color;
+    font-size: .8rem;
+
+    dl {
+      dt {
+        font-weight: $font-heavy;
+      }
+
+      dd {
+        font-weight: $font-light;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.#{$component}-companyInfo {
+}
+
+.#{$component}-socialMedia {
+
+  li {
+    display: inline-flex;
+
+    a,
+    a:link {
+      display: block;
+      padding-right: 1.5em;
+      color: $inverse-color;
+      text-decoration: none;
+      opacity: .7;
+      transition: all 300ms;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.#{$component}-companyLocation {
+  text-align: right;
+}

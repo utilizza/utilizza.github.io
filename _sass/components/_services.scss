@@ -4,6 +4,7 @@ $singleComponent: serviceItem;
 .#{$component} {
   background: $light-background-color;
   padding: 1em;
+  text-align: center;
 }
 
 .#{$component}-title {
@@ -14,10 +15,28 @@ $singleComponent: serviceItem;
   padding: 1em;
 }
 
+.#{$component}-button {
+  @extend .button;
+  color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-color;
+    color: $inverse-color;
+  }
+}
+
 .#{$singleComponent} {
   padding: 1em;
   background: $inverse-color;
   border: 1px solid $border-color;
+}
+
+.#{$singleComponent}-title,
+.#{$singleComponent}-description {
+  text-align: left;
 }
 
 @media (min-width: 800px) {

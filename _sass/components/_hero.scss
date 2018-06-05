@@ -3,8 +3,9 @@ $component: hero;
 .#{$component} {
   box-sizing: border-box;
   padding: 3em 5em;
-  height: 100vh;
-  background: #2A5752 linear-gradient(to bottom, #2A5752, #4FA49C);
+  height: 100%;
+  background: #2A5752 linear-gradient(to bottom, #2A5752, #4FA49C) no-repeat;
+  text-align: center;
 }
 
 .#{$component}-title,
@@ -20,4 +21,17 @@ $component: hero;
   font-size: 1.5rem;
   font-weight: $font-light;
   line-height: 1.3em;
+}
+
+.#{$component}-button {
+  @extend .button;
+  color: $inverse-color;
+  border-color: $inverse-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $inverse-color;
+    color: $primary-color;
+  }
 }

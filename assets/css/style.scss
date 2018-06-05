@@ -4,11 +4,12 @@
 @import "base/normalize";
 @import "base/reset";
 @import "base/theme";
-@import "base/utils";
 @import "base/typography";
+@import "base/utils";
 @import "base/layout";
 
 @import "components/header";
+@import "components/footer";
 @import "components/hero";
 @import "components/services";
 @import "components/team";
