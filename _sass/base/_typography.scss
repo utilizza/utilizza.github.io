@@ -1,4 +1,4 @@
-$font-family: 'Lato', Arial, sans-serif !default;
+$font-family: 'Source Sans Pro', Arial, sans-serif !default;
 $font-light: 300;
 $font-regular: 400;
 $font-heavy: 900;
@@ -12,18 +12,27 @@ html, body {
 }
 
 .sectionTitle {
-  font-size: 2.25rem;
+  font-size: 4rem;
   font-weight: $font-heavy;
   line-height: $line-height;
-  text-align: center;
-  margin-top: 0;
+  text-align: left;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 
   &:after {
     display: block;
     width: 3rem;
-    border-bottom: 5px solid $primary-color;
+    border-bottom: 10px solid #00C8D0;
     content: " ";
-    margin: 0 auto 0 auto;
+    margin: 0;
   }
+}
+
+.sectionSubtitle {
+  font-size: 2.5rem;
+  font-weight: $font-heavy;
+  line-height: $line-height;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

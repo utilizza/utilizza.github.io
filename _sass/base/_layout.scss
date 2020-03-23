@@ -1,4 +1,9 @@
-$max-width: 1200px !default;
+$max-width: 980px !default;
+
+.wrap {
+  max-width: $max-width;
+  margin: 0 auto;
+}
 
 .flexWrap {
  @include display-flex; 

@@ -3,39 +3,80 @@ layout: default
 ---
 
     <section class="hero">
-      <h1 class="hero-title">Fornecemos apoio a times de desenvolvimento para <strong>projetar soluções digitais acessíveis</strong></h1>
-      <p class="hero-text">A Utilizza oferece cursos de curta duração, treinamentos sob demanda, suporte e consultoria especializada em acessibilidade web para auxiliar empresas e times de desenvolvimento a entender como desenvolver sites e aplicações web acessíveis e inclusivas.</p>
-      <a href="mailto:contato@utilizza.co?subject=Orçamento" role="button" title="Abre seu programa de e-mail" class="hero-button">Solicite um orçamento</a>
+      <div class="wrap">
+        <h1 class="hero-title">Ajudamos empresas de tecnologia a construir uma cultura de acessibilidade</h1>
+        <p class="hero-text">A Utilizza oferece cursos de curta duração, treinamentos sob demanda, suporte e consultoria especializada em acessibilidade web para auxiliar empresas e times de desenvolvimento a entender como desenvolver sites e aplicações web acessíveis e inclusivas.</p>
+      </div>
     </section>
 
     <section class="services">
-      <h2 class="services-title">Serviços</h2>
+      <div class="wrap">
+        <h2 class="services-title">Serviços</h2>
 
-      <div class="services-box">
-        <div class="serviceItem">
-          <h3 class="serviceItem-title">Avaliação Diagnóstica de <strong>Acessibilidade</strong></h3>
-          <p class="serviceItem-description">Inspeção de sites, aplicações e sistemas web para identificar barreiras de interação de acordo com diretrizes internacionais de acessibilidade, utilizando técnicas automáticas, semiautomáticas e exploratórias de avaliação.</p>
-        </div>
-        <div class="serviceItem">
-          <h3 class="serviceItem-title">Cursos, Workshops e <strong>Treinamentos</strong></h3>
-          <p class="serviceItem-description">Programas educacionais corporativos sobre acessibilidade, usabilidade e experiência do usuário preparados sob demanda para desenvolvedores, designers, gerentes de projetos, analistas de teste ou designers instrucionais, que podem ser presenciais ou remotos.</p>
-        </div>
-        <div class="serviceItem">
-          <h3 class="serviceItem-title">Teste de Software e <strong>Quality Assurance (QA)</strong></h3>
-          <p class="serviceItem-description">Para empresas que não possuem equipe de testes/QA, oferecemos serviço sob demanda de testes manuais exploratórios para encontrar bugs funcionais e não funcionais em sites e aplicações web, realizado remotamente.</p>
-        </div>
+        <h3 class="services-subtitle">Serviços de acessibilidade</h3>
+
+        <ul class="services-box">
+          <li class="serviceItem">
+            <h4 class="serviceItem-title">Consultoria de acessibilidade</h4>
+            <ul>
+              <li>Avaliação do nível de acessibilidade de produtos ou serviços digitais</li>
+              <li>Orientação para implementar políticas de acessibilidade</li>
+            </ul>
+          </li>
+          <li class="serviceItem">
+            <h4 class="serviceItem-title">Treinamento de acessibilidade</h4>
+            <ul>
+              <li>Seminário/palestra online (webinar)</li>
+              <li>Treinamento teórico e prático sobre acessibilidade digital para times multidisciplinares (design, desenvolvimento, testes, conteúdo e gestão)</li>
+            </ul>
+          </li>
+          <li class="serviceItem">
+            <h4 class="serviceItem-title">Avaliação de acessibilidade</h4>
+            <ul>
+              <li>Testes automatizados e manuais</li>
+              <li>Priorização de correções</li>
+              <li>Acompanhamento e orientação do time técnico da empresa para implementar as correções</li>
+              <li>Definição de boas práticas a serem seguidas</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3 class="services-subtitle">Serviços de <abbr lang="en" title="User Experience">UX</abbr> e <abbr lang="en" title="Quality Assurance">QA</abbr></h3>
+
+        <ul class="services-box">
+          <li class="serviceItem">
+            <h4 class="serviceItem-title">Análise de UX</h4>
+            <ul>
+              <li>Realização de benchmarking e análise competitiva</li>
+              <li>Geração de insights e extração de padrões a partir de insumos coletados pela equipe de design</li>
+              <li>Oficinas e mentorias de análise para pesquisadores de UX</li>
+              <li>Priorização de backlog</li>
+              <li>Documentação de UX</li>
+            </ul>
+          </li>
+          <li class="serviceItem">
+            <h4 class="serviceItem-title">Testes humanizados de software e Quality Assurance (QA)</h4>
+            <ul>
+              <li>Planejamento de testes</li>
+              <li>Definição de casos de teste</li>
+              <li>Testes humanizados (manuais) funcionais e não-funcionais para aplicações desktop e mobile</li>
+              <li>Foco na identificação de falhas funcionais, de usabilidade e acessibilidade baseados na ISO/IEC 9126</li>
+            </ul>
+          </li>
+        </ul>
+
       </div>
-
-      <a href="mailto:contato@utilizza.co?subject=Orçamento" role="button" title="Abre seu programa de e-mail" class="services-button">Entre em contato conosco para saber mais</a>
     </section>
 
     <section class="team">
-      <h2 class="team-title">Quem faz a Utilizza</h2>
-      
-      <div class="teamMember">
-        <div class="teamMember-image"></div>
-        <div class="teamMember-about">
-          {{ site.team.talita.about }}
+      <div class="wrap">
+        <h2 class="team-title">Quem faz a Utilizza</h2>
+        
+        <div class="teamMember">
+          <div class="teamMember-image"></div>
+          <div class="teamMember-about">
+            {{ site.team.talita.about }}
+          </div>
         </div>
       </div>
     </section>

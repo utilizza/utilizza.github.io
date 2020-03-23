@@ -1,9 +1,15 @@
 $component: team;
+$subcomponent: teamMember;
 
 .#{$component} {
-  padding: 5em 2em;
+  padding: 3em 2em 5em 2em;
 }
 
 .#{$component}-title {
   @extend .sectionTitle;
+}
+
+.#{$subcomponent}-about {
+  font-size: 1.2rem;
+  line-height: 1.5em;
 }
