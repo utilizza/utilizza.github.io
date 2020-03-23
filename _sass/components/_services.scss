@@ -4,15 +4,18 @@ $singleComponent: serviceItem;
 .#{$component} {
   background: $light-background-color;
   padding: 1em;
-  text-align: center;
 }
 
 .#{$component}-title {
   @extend .sectionTitle;
 }
 
+.#{$component}-subtitle {
+  @extend .sectionSubtitle;
+}
+
 .#{$component}-box {
-  padding: 1em;
+  padding: 1em 0 1em 0;
 }
 
 .#{$component}-button {
@@ -32,11 +35,30 @@ $singleComponent: serviceItem;
   padding: 1em;
   background: $inverse-color;
   border: 1px solid $border-color;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+
+  ul {
+
+    li {
+      padding: .75em 0 .75em 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+  }
 }
 
 .#{$singleComponent}-title,
 .#{$singleComponent}-description {
   text-align: left;
+}
+
+.#{$singleComponent}-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $secondary-color;
 }
 
 @media (min-width: 800px) {

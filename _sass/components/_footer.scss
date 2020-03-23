@@ -1,14 +1,15 @@
 $component: footer;
 
 #{$component} {
-  .flexWrap {
-    padding: 2em;
-    background: #212223;
+  padding: 2em;
+  background: #212223;
+  color: $inverse-color;
+  font-size: .8rem;
+
+  .wrap {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: strech;
-    color: $inverse-color;
-    font-size: .8rem;
 
     dl {
       dt {
